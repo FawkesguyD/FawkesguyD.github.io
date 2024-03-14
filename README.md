@@ -11,6 +11,6 @@ I am studying a CSS&HTML course and want to take notes on this course. Cause her
 
 ## Parts:
 
-    [columns](/columns/columns_doc.md)
-    [display](/display/display_doc.md)
-    [floats](/floats/floats_doc.md)
+    [columns](display/display_doc.md)
+    [display](display/display_doc.md)
+    [floats](floats/floats_doc.md)
