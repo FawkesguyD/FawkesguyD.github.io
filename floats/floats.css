@@ -1,0 +1,40 @@
+/* Set the font size for the body */
+body {
+	font-size: 1.5rem;
+}
+
+/* Define the styles for the block element */
+.block {
+	width: 30vw;
+	height: 30vw;
+	background-color: #000;
+	color: #fff;
+	padding: 1rem;
+}
+
+/* Float the element to the left */
+.left {
+	float: left;
+	margin-right: 1rem;
+}
+
+/* Float the element to the right */
+.right {
+	float: right;
+	margin-left: 1rem;
+}
+
+/* Clear the float */
+.clear {
+	clear: both;
+}
+
+/* Define the styles for the section element */
+section {
+	background-color: bisque;
+	border: 1px solid #333;
+	padding: 1rem;
+	/* display: inline-block; */
+	/* overflow: auto; */
+	display: flow-root;
+}

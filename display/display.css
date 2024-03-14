@@ -1,0 +1,43 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Resetting default styles for all elements */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Setting the font family and size for the body */
+body {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2rem;
+}
+
+/* Styling for unordered lists */
+ul {
+	display: block; /* Displaying the list as a block element */
+	list-style-type: none;
+	padding: 0.5rem;
+	text-align: right;
+	background-color: #000;
+	margin: 0;
+}
+
+/* Styling for list items */
+li {
+	display: inline-block; /* Displaying the list items inline */
+	margin-inline: 0.5;
+}
+
+/* Styling for links within list items */
+li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Styling for links on hover and focus */
+li a:hover,
+li a:focus {
+	text-decoration: underline;
+}
