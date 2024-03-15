@@ -6,11 +6,11 @@ I am studying a CSS&HTML course and want to take notes on this course. Cause her
 
 ## Here some links that can help you
 
-[site for calculating priority CSS elements](https://specificity.keegan.st/)
+[site for calculating priority CSS elements](https://specificity.keegan.st/) <br>
 [list of unicode characters](https://symbl.cc/en/unicode-table/)
 
 ## Parts:
 
-[columns](columns/columns_doc.md)
-[display](display/display_doc.md)
+[columns](columns/columns_doc.md) <br>
+[display](display/display_doc.md) <br>
 [floats](floats/floats_doc.md)
