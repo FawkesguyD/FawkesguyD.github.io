@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.5rem;
+	min-height: 200vh;
+}
+
+.outer-container {
+	border: 1px dashed #000;
+	width: 75vw;
+	height: 85vh;
+	margin: 40px auto;
+	position: relative;
+}
+
+.inner-container {
+	border: 2px solid blue;
+	width: 40vw;
+	height: 50vh;
+	margin: 200px auto;
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	color: #fff;
+	padding: 1rem;
+}
+
+.absolute {
+	background-color: blue;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+
+.relative {
+	background-color: red;
+	position: relative;
+	left: 100px;
+	top: 300px;
+}
+
+.fixed {
+	background-color: green;
+	position: fixed;
+	top: 100px;
+	z-index: 2;
+}
+
+.sticky {
+	background-color: black;
+	position: sticky;
+	top: 100px;
+	right: 100px;
+	z-index: 4;
+}
+
+/* Second part of the lesson */
+
+html { 
+	scroll-behavior: smooth; 
+
+}
+
+section {
+	height: 100vh;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+header,
+footer {
+	color: #fff;
+	text-align: center;
+	height: 100px;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	font-size: 5rem;
+}
+
+footer {
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 4rem;
+}
+
+a:visited {
+	color: #fff;
+}
+
+.social {
+	background-color: royalblue;
+	color: #fff;
+	/**
+	 * This CSS rule sets the font size to inherit.
+	 * 
+	 * The 'inherit' value is used to inherit the font size from the parent element.
+	 * By setting the font size to 'inherit', the element will have the same font size as its parent.
+	 * This can be useful when you want to maintain consistent font sizes across different elements.
+	 */
+	font-size: inherit;
+	padding: 1rem;
+	position: fixed;
+	top: 30%;
+	left: 0;
+}
