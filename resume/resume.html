@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta name="description" content="Это простой сайт визитка" />
+		<meta name="keywords" content="Gnitetskiy, resume" />
+		<title>Daniel GG</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<table>
+				<tr>
+					<td>
+						<img
+							src="avatarForSite.png"
+							width="300"
+							alt="картинка не найдена"
+						/>
+					</td>
+					<td>
+						<h1>Даниил Гнитецкий</h1>
+						<p class="about">
+							<em>Я студент университета <strong>МИРЭА</strong></em>
+							<br />
+							Учусь на DevOps инженера
+						</p>
+					</td>
+				</tr>
+			</table>
+			<div class="card links">
+				<h2>Мои ссылки</h2>
+				<br />
+				<ul type="square">
+					<li>
+						<strong>tg: </strong>
+					</li>
+					<li><strong>instagram:</strong></li>
+					<li><strong>vk:</strong></li>
+				</ul>
+			</div>
+			<div class="card interests">
+				<h2>Мои увлечения</h2>
+				<br />
+				<ol type="1">
+					<li>прога</li>
+					<li>спорт</li>
+					<li>игры</li>
+				</ol>
+			</div>
+			<div class="card table">
+				<h2>Дисциплины</h2>
+				<br />
+				<table>
+					<tr>
+						<th>Предмет</th>
+						<th>Дата</th>
+						<th>Статус</th>
+					</tr>
+					<tr>
+						<td>СИАОД</td>
+						<td>2_семестр</td>
+						<td>сдан</td>
+					</tr>
+					<tr>
+						<td>Джава</td>
+						<td>3_семестр</td>
+						<td>сдан</td>
+					</tr>
+				</table>
+			</div>
+			<div class="card technologies">
+				<h2>Технологии которые я сейчас изучаю</h2>
+				<br />
+				<a href="learnings.html"> подробнее</a>
+			</div>
+			<div class="message">
+				<h1>Связаться со мной</h1>
+				<br />
+				<form>
+					<div class="field">
+						<label for="name">Ваше имя:</label>
+						<input type="text" id="name" placeholder="Введите имя" />
+					</div>
+					<div class="field">
+						<label for="email">Ваш email:</label>
+						<input type="text" id="email" placeholder="Введите email" />
+					</div>
+					<div class="field">
+						<label for="text">Ваше сообщение:</label>
+						<br />
+						<textarea
+							id="text"
+							cols="20"
+							rows="5"
+							placeholder="Введите сообщение..."
+						></textarea>
+					</div>
+					<button type="submit" class="btn">Отправить</button>
+				</form>
+				<br />
+			</div>
+			<footer>
+				<a href="../index.html" class="btn">назад</a>
+				<nobr>Социальные сети:</nobr>
+				<a href="https://www.instagram.com/" target="_blank">Instagram</a>
+				<nobr class="nobr"> | </nobr>
+				<a href="https://web.telegram.org/a/ " target="_blank">Telegram</a>
+				<nobr class="nobr"> | </nobr>
+				<a href="https://www.youtube.com/" target="_blank">Youtube</a>
+			</footer>
+		</div>
+	</body>
+</html>
