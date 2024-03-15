@@ -1,3 +1,4 @@
+<!-- TODO: make it better, add more info about position -->
 # Position
 ## Properties
 
