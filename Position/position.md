@@ -16,7 +16,9 @@
 
 - z-index: 0; (0 - minimal) position on the screen. Which element will be in front
 - to remove something from the page without deleting it
+  ```
   position: absolute;
   lef: -1000000px; # or another random big number with -
+  ```
 - The *inherit* property in CSS is used to set the value of an element's property to be the same as its parent element.
 - **String scroll-behavior: smooth;** adds smooth scrolling to an element or container when using scrolling.
