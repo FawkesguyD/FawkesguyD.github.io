@@ -22,6 +22,8 @@ As I progress through my course, I'm compiling notes on key topics. These docume
 - **Columns**: Deep dive into creating and styling columns in your layouts. [Read more](/chapter4_columns/en_columns_doc.md)
 - **Display**: Understanding the display property and its impact on your designs. [Read more](/chapter2_display/en_display_doc.md)
 - **Floats**: Mastering floats for complex layout adjustments. [Read more](/chapter3_floats/en_floats_doc.md)
+- **Position**: Set elements correctly. [Read more](/chapter5_Position/en_position_doc.md)
+- **Flexbox**: One of properties in display. [Read more](/chapter6_Flexbox/en_flexbox_doc.md)
 
 ## Contributing
 
