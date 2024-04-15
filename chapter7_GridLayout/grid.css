@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 50px auto min-content;
+    grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd"
+        "mn mn mn mn mn mn mn mn mn"
+        "ft ft ft ft ft ft ft ft ft";
+        column-gap:0.5rem;
+}
+
+.el {
+    background-color: rebeccapurple;
+    color: #fff;
+    display: grid;
+    place-content: center;
+}
+
+.header {
+    grid-area: hd;
+}
+
+
+.footer {
+    grid-area: ft;
+}
+
+
+.container {
+    grid-area: mn;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 2fr); /* !This CSS code sets the grid template rows for a grid layout. It uses the repeat() function to create three rows, with the first row taking up 1 fraction unit, the second row taking up 2 fraction units, and the third row taking up 1 fraction unit. */
+    grid-auto-rows: minmax(150px, auto); /* !This CSS code sets the minimum and maximum height of grid items to 150px and auto, respectively. */
+    gap: 1rem; /* !This CSS code sets the gap between grid items to 1rem. */
+}
+
+.box {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.box:first-child {
+    background-color: purple;
+    grid-column-start: 1; /* !it starts at the 1st column */
+    grid-column-end: 4; /* !it stops before the 4th column */
+    grid-row-start: 1; /* !it starts at the 1st row */
+    grid-row-end: 3; /* !it stops before the 3rd row */
+
+    display: grid;
+    /* align-content: center;
+    justify-content: center; */
+    place-content: center; /* use both align-content and justify-content */ 
+}
+
+.box:nth-child(4) {
+    background-color: blue;
+    grid-column: 1/ 4; /* !sort form of grid-column-start and grid-column-end start after 2nd and end before 4th*/
+    grid-row: 3 / 5;
+
+    display: grid;
+    place-content: center;
+}

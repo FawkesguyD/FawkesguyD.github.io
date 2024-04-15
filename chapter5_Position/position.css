@@ -97,6 +97,9 @@ header {
 	font-size: 5rem;
 }
 
+.blank {
+	margin-bottom: 100px;
+}
 footer {
 	background-color: black;
 	position: fixed;

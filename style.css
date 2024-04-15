@@ -1,38 +1,35 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-auto-rows: auto auto auto;
+    grid-template-areas: 
+        "header header header header header" 
+        "main main main main main" 
+        "footer footer footer footer footer";
+    background-color: #fffaf0;
+
+}
+
+.el {
+    width: auto;
+    min-height: auto;
+    display: grid;
+    place-content: center;
 }
 
 nav {
-	margin: 0 auto 0;
-	max-width: 600px;
-}
-
-.text {
-	color: rgb(70, 117, 117);
-}
-
-.line {
-	border: none;
-	border-bottom: 3px solid #333;
-	margin: 5px 0 0 0;
-}
-
-h5 {
-	color: rgb(172, 171, 171);
-}
-
-h2 {
-	text-align: left;
-}
-
-h3 {
-	display: inline;
+    display: grid;
+    grid-column: 2 / 5;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 ul {
@@ -43,12 +40,74 @@ ul {
 li {
 	margin: 0 0 1rem 0;
 }
-a,
+
+
+/* FIXME: make the line full width in main*/
+.line {
+    width: 100%;
+    border-bottom: 3px solid #333;
+    margin: 0;
+}
+
+/**-------------------------Header-------------------------**/
+.header {
+    grid-area: header;
+}
+
+/**------------------------------------------------------**/
+
+/**-------------------------main-------------------------**/
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-column: 2 / 5;
+    margin-bottom: 5%;
+}
+/**------------------------------------------------------**/
+
+/**-------------------------Footer-------------------------**/
+.footer {
+    grid-area: footer;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: #a3a2a2;
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+}
+
+.footer_text {
+	max-width: 600px;
+    text-align: left;
+    padding: 10px;
+}
+/**------------------------------------------------------**/
+
+/**-------------------------Text-------------------------**/
+.text {
+	color: rgb(70, 117, 117);
+}
+
+h1 {
+    color: rgb(70, 117, 117);
+}
+h5 {
+	color: rgb(172, 171, 171);
+    text-align: center;
+}
+
+
+/**------------------------------------------------------**/
+
+/**-------------------------Links-------------------------**/
 a {
 	text-decoration: none;
 	color: #333;
 	padding: 3px;
 }
+
 nav a:hover {
 	color: rgb(70, 117, 117);
 	font-size: 21px;
@@ -59,34 +118,4 @@ footer a:hover {
 	color: rgb(70, 117, 117);
 	border-bottom: 1px solid #3333335b;
 }
-
-#page-container {
-	position: relative;
-	min-height: 100vh;
-	background: #fffaf0;
-}
-#content-wrap {
-	padding-bottom: 1rem;
-	text-align: center;
-}
-#footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 8rem;
-	background: #b1ada5;
-}
-.footer_text {
-	margin: 0 auto 0;
-	max-width: 600px;
-	text-align: left;
-}
-#top {
-	padding-top: 30px;
-	padding-bottom: 20px;
-}
-
-h4 {
-	display: inline;
-	color: rgb(172, 171, 171);
-}
+/**------------------------------------------------------**/
