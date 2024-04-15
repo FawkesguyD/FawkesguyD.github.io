@@ -4,7 +4,7 @@ Welcome to this evolving guide on CSS and HTML! As I journey through my CSS&HTML
 
 ## Quick Navigation
 
-- [Example Site with Basic CSS & HTML](https://fawkesguyd.github.io/)
+- [Site with Basic CSS & HTML](https://fawkesguyd.github.io/)
 - [Helpful Links](#helpful-links)
 - [Study Notes](#study-notes)
 
@@ -19,9 +19,9 @@ Below are some resources that I've found invaluable in my CSS & HTML learning jo
 
 As I progress through my course, I'm compiling notes on key topics. These documents are living resources that get updated with new insights:
 
-- **Columns**: Deep dive into creating and styling columns in your layouts. [Read more](/columns/columns_doc.md)
-- **Display**: Understanding the display property and its impact on your designs. [Read more](/display/display_doc.md)
-- **Floats**: Mastering floats for complex layout adjustments. [Read more](/floats/floats_doc.md)
+- **Columns**: Deep dive into creating and styling columns in your layouts. [Read more](/chapter4_columns/en_columns_doc.md)
+- **Display**: Understanding the display property and its impact on your designs. [Read more](/chapter2_display/en_display_doc.md)
+- **Floats**: Mastering floats for complex layout adjustments. [Read more](/chapter3_floats/en_floats_doc.md)
 
 ## Contributing
 
