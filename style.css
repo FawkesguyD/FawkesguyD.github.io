@@ -62,14 +62,15 @@ li {
     grid-area: main;
     display: grid;
     grid-column: 2 / 5;
-    margin-bottom: 5%;
+    margin-bottom: 20%;
 }
 /**------------------------------------------------------**/
 
 /**-------------------------Footer-------------------------**/
+/* FIXME: make footer stand on the bottom of the page */
 .footer {
     grid-area: footer;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #a3a2a2;

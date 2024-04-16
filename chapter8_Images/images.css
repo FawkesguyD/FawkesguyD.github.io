@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap');
+
+
+/** Begin Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+/** End Reset */
+
+/** Utility Classes */
+.nowrap {
+    white-space: nowrap; /* Prevents text from being broken into multiple lines */
+}
+
+.offscreen {
+    position: absolute;
+    left: -100000px;
+}
+
+/** End Utility Classes*/
+body {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    min-height: 100vh;
+    /* background-image: url(/content/circle.png),
+                      radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background-position: center;
+    background-size: 40%, auto;
+    background-repeat: no-repeat; */
+
+    /*! Shorter form for the background */
+    background: no-repeat center/40% url("/content/circle.png"), radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.container {
+    background-color: rgb(128, 189, 206);
+    background-image: url('../content/background.jpg');
+    /* background-repeat: no-repeat; */
+    background-position: top;
+    background-size: cover;
+}
+
+.hero {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: rgba(0, 0, 0, 0.407);
+}
+
+
+.h1 {
+    font-size: 500%;
+    color: white;
+    text-shadow: 2px 2px 5px #1e2c2d;
+    /* background-color: rgba(0, 0, 0, 0.407);
+    padding: 0.25rem;
+    border-radius: 10px; */
+}
+
+.camera-pic-figure {
+    width: 35%;
+}
+
+.camera-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px;
+    border-radius: 100%;
+}
+
+.section {
+    margin-top: 1rem;
+    padding-left: 10px;
+    border: 1px solid red;
+}
+
+.section img {
+    width: 20%;
+    height: auto;
+}
+
+.clip {
+    font-weight: 800;
+    font-size: 13rem;
+    text-align: center;
+    background-image: url('../content/kiwi.jpg');
+    background-size: 100%;
+    background-position: center;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
