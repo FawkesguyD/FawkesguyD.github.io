@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Заметки</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Notes</h1>
+        </header>
+        <main>
+            <form class="form">
+                <!-- Bootstrap style -->
+                <!-- <input class="enter_form form-control" type="text" placeholder="your note here.." aria-label="default input example">
+                 <button class="button btn btn-primary" type="button">Button</button>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="note">
+                    <div class="btn-group">
+                        <button class="btn btn-outline-secondary btnPlus">+</button>
+                        <button class="btn btn-outline-secondary">-</button>
+                    </div>
+                </div> -->
+                <!-- -------------- -->
+                <!-- My style -->
+                <input id="input" type="text" placeholder="your note here.." value="cars" class="font-size-16 enter_form input disableBorder">
+                <button id="create" type="button" class="font-size-16 submitButton">add note</button>
+                <ul id="list">
+                    <!-- <li id="element">
+                        <div class="background-grays flex-end enter_form change_form disableBorder">
+                            <span class="text text-decoration-line-through">Note</span>
+                            <div class="button-group">
+                                <button type="button" class="figma_Button btn btn-color-completed">&#10003;</button>
+                                <button type="button" class="figma_Button btn btn-danger">&#10008;</button>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+                <!-- -------------------- -->
+            </form>
+        </main>
+     </div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

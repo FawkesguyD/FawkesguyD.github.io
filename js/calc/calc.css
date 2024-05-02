@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    min-height: 100vh;
+
+    background-color: #25323d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: #fff;
+    font-size: 64px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+.container {
+    /* border: 2px solid #fff; */
+    margin: 1rem;
+    padding: 1rem;
+    min-width: 50%;
+    max-width: none;
+    min-height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.element {
+    border-style: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+result {
+    font-size: 16px;
+    /* border: 1px solid #fff; */
+    color: #fff;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+    padding-left: 5%;
+}
+
+.button {
+    padding: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.calc_form {
+    min-width: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "first second" 
+                         "plus minus"
+                         "calculate calculate";
+                         column-gap: 0.5em;
+                         row-gap: 1rem;
+    margin-bottom: 1rem;
+    }
+
+.first {
+    grid-area: first;
+}
+
+.second {
+    grid-area: second;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.calculate {
+    grid-area: calculate;
+}
+
+/*? Red button */
+.b-r:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #fff;
+}
+.b-r {
+     background-color: rgb(254, 70, 70);
+    color: #fff;
+}
+/*? ---------- */
+
+/*? Green Button */
+.b-g:hover {
+    background-color: rgba(0, 108, 0, 0.5);
+    color: #fff;
+}
+.b-g {
+    background-color: rgb(2, 164, 2);
+    color: #fff;
+}
+/*? ---------- */
+
+/*?  Submit Button  */
+
+.blue_button {
+    padding: 10px;
+    background-color: rgba(0, 0, 255, 0.117);
+    color: #6ee8f8;
+}
+
+.blue_button:hover {
+    background-color: rgba(79, 79, 251, 0.5);
+    color: #fff;
+}
+/*? ---------  */
+
+.enter_form {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    min-height: 70px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.input {
+    border-radius: 10px;
+    height: 68px;
+    width: 100%;
+    border-style: none;
+}
+
+.figma_greenButton {
+    border-radius: 5px;
+    padding: 8px 16px;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+}
+
+.figma_redButton {
+    border-radius: 5px;
+    padding: 8px 16px;
+    width: 48px;
+    height: 48px;   
+}
+
+.figma {
+    border: none;
+    border-style: none;
+}
+
+.btn {
+    height: 35px;
+}
+
+.form-control {
+    height: 30px;
+}

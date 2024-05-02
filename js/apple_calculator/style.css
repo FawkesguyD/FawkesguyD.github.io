@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-size-large: 70px;
+    --font-size-medium: 60px;
+    --font-size-small: 55px;
+    --font-size-tiny: 50px;
+}
+
+body {
+    font-family: 'SF Compact', sans-serif;
+    font-size: 16px;
+
+    background-color: black;
+    color: rgb(249 249 249);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+}
+
+main {
+    display: flex;
+}
+
+.res {
+    font-size: var(--font-size-large);
+    margin-bottom: 10px;
+    padding: 0 20px 0 20px;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*!---------------------------------------*/
+/*!            Buttons Settings           */
+/*!_______________________________________*/
+
+.btn {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 1.5rem;
+
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-font-size-29 {
+    font-size: 29px;
+}
+
+.btn-font-size-35 {
+    font-size: 35px;
+}
+
+.btn-group {
+    min-width: none;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "ac plusMinus percent subtraction"
+                         "seven eight nine multiplication"
+                         "four five six minus"
+                         "one two three plus"
+                         "zero zero dot result";
+    gap: 0.8em;
+}
+
+.btn-gray {
+    background-color: rgb(51 51 51);
+    color: var(--body-color);
+
+    &:hover {
+        background-color: rgb(139, 139, 139);
+    }
+}
+
+.btn-lightgray {
+    background-color: rgb(165 165 165);
+    color: black;
+
+    &:hover {
+        background-color: rgb(228, 228, 228);
+    }
+}
+
+.btn-orange {
+    background-color: rgb(255 159 9);
+    color: var(--body-color);
+
+    &:hover {
+        background-color: rgb(255, 205, 125);
+    }
+
+    &:active {
+        background-color: rgb(249 249 249);
+        color: rgb(255 159 9);
+    }
+}
+
+
+
+
+
+
+
+
+/*!---------------------------------------*/
+/*!             Grid Settings             */
+/*!_______________________________________*/
+
+.ac {
+    grid-area: ac;
+}
+
+.plusMinus {
+    grid-area: plusMinus;
+}
+
+.percent {
+    grid-area: percent;
+}
+
+.subtraction {
+    grid-area: subtraction;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.multiplication {
+    grid-area: multiplication;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.zero {
+    grid-area: zero;
+    width: 132.8px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dot {
+    grid-area: dot;
+}
+
+.result {
+    grid-area: result;
+}
