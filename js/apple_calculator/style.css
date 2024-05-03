@@ -6,9 +6,10 @@
 
 :root {
     --font-size-large: 70px;
-    --font-size-medium: 60px;
-    --font-size-small: 55px;
-    --font-size-tiny: 50px;
+    --font-size-medium: 55px;
+    --font-size-small: 50px;
+    --font-size-tiny: 45px;
+    --body-color: rgb(249 249 249);
 }
 
 body {
@@ -16,7 +17,7 @@ body {
     font-size: 16px;
 
     background-color: black;
-    color: rgb(249 249 249);
+    color: var(--body-color);
 
     min-height: 100vh;
     display: flex;
@@ -65,11 +66,11 @@ main {
 }
 
 .btn-font-size-35 {
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .btn-group {
-    min-width: none;
+    min-width: auto;
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
@@ -114,6 +115,11 @@ main {
     }
 }
 
+.btn-orange-active {
+    background-color: rgb(249 249 249);
+    color: rgb(255 159 9);
+}
+
 
 
 
@@ -155,6 +161,7 @@ main {
 
 .multiplication {
     grid-area: multiplication;
+    font-size: 40px;
 }
 
 .four {

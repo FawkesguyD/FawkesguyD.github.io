@@ -18,7 +18,8 @@ subtractBtn.addEventListener('click', () => {
 
 submitBtn.addEventListener('click', () => { 
     if (action == '+') {
-        result.textContent = Number(number_1.value) + Number(number_2.value)
+        debugger
+        result.textContent = number_1.value + number_2.value
     }
     if (action == '-'){
         result.textContent = Number(number_1.value) - Number(number_2.value)

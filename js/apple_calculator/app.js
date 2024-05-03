@@ -2,23 +2,34 @@ const result_label = document.getElementById('res')
 const btn_group = document.getElementById('btn-group')
 
 let result_value = '0'
+let operator_sign = ''
 let minus_flag = false
 
+const math = [
+    { type: 'del', flag: false, sign: '/' },
+    { type: 'mul', flag: false, sign: '*' },
+    { type: 'min', flag: false, sign: '-' },
+    { type: 'plu', flag: false, sign: '+' },
+]
 
-console.log('-2' / 100)
+//? _________________________________________
+//? _________Listener of the Buttons_________
+//?------------------------------------------
+
 btn_group.onclick = function(event) {
-    if (event.target.dataset.index) {
-        if (result_value == '0') {
+    let targetButton = event.target
+    if (targetButton.dataset.index) {
+        if (result_value === '0') {
             result_value = ''
         }
-        result_value += event.target.dataset.index
+        result_value += targetButton.dataset.index
     }
 
-    if (event.target.dataset.type == 'ac') {
+    if (targetButton.dataset.type === 'ac') {
         result_value = '0'
     }
     
-    if (event.target.dataset.type == 'plusMinus') {
+    if (targetButton.dataset.type === 'plusMinus') {
         minus_flag = !minus_flag
         if (minus_flag) {
             result_value = '-' + result_value
@@ -27,15 +38,33 @@ btn_group.onclick = function(event) {
         }
     }
     
-    if (event.target.dataset.type == 'percent') {
+    if (targetButton.dataset.type === 'percent') {
         result_value = result_value / 100
     }
+    if (targetButton.dataset.type === 'dot') {
+        if (!result_value.includes('.')) {
+            result_value += '.'
+        }
+    }
 
-    if (result_value != '0') {
+    if (result_value !== '0') {
          document.getElementById('ac').textContent = "C"
     } else {
         document.getElementById('ac').textContent = "AC"
     }
+
+    if (targetButton.dataset.type === 'del' || targetButton.dataset.type === 'mul' || targetButton.dataset.type === 'min' || targetButton.dataset.type === 'plu') {
+        for (const operator of math) {
+            if (targetButton.dataset.type === operator.type) {
+                operator_hold(targetButton)
+                operator_sign = operator.sign
+                operator.flag = true
+                operators_color_hold(targetButton)
+                break
+            }
+        }
+    }
+    
     sizing()
     res(result_value)
 }
@@ -47,7 +76,22 @@ const fontSizes = {
     9: "var(--font-size-tiny)",
 }
 
+function operator_hold(targetButton) {
+    for (let index = 0; index < math.length; index++) {
+        if (math[index].flag) {
+            math[index].flag = false
+            targetButton.classList.remove('btn-orange-active')
+        }
+    }
+}
 
+function operators_color_hold(targetButton) {
+    for (const operator of math) {
+        if (operator.flag) {
+            targetButton.classList.add('btn-orange-active')
+        }
+    }
+}
 
 function sizing() {
     for (let size in fontSizes) {
@@ -64,7 +108,7 @@ function res(number) {
         number = number.toString()
         index = number.indexOf('.')
 
-
+        number = number.replace('.', ',')
         integer_number = number.slice(0, index)
         let temp_array = integer_number.split('')
         for (let index = temp_array.length - 3; index > 0; index -= 3) {
